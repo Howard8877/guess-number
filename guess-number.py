@@ -1,8 +1,12 @@
 import random
-r = random.randint(1,100)
+start = input('請輸入隨機數字開始值:')
+end = input('請輸入隨機數字結束值:')
+start = int(start)
+end = int(end)
+r = random.randint(start,end)
 count = 0
 while True:
-	g = input('1~100請猜一個整數:')
+	g = input('請猜一個整數:')
 	g = int(g)
 	count += 1
 	if g == r:
